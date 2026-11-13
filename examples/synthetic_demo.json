@@ -1,0 +1,100 @@
+{
+  "disclaimer": "ALL RESULTS ARE SYNTHETIC. Not evidence of learning impact on actual students.",
+  "data_split": {
+    "validation": "separate synthetic IDs per generation",
+    "final_test": "90000..90299"
+  },
+  "fixed_schedule": {
+    "learning_gain": 0.56988,
+    "transfer": 0.50837,
+    "retention": 0.79616,
+    "hints": 3,
+    "objective": 0.59444
+  },
+  "fixed_adaptive_rule": {
+    "learning_gain": 0.57673,
+    "transfer": 0.56413,
+    "retention": 0.83309,
+    "hints": 3.61667,
+    "objective": 0.62345
+  },
+  "evolved_update_rule": {
+    "learning_gain": 0.57866,
+    "transfer": 0.59601,
+    "retention": 0.85307,
+    "hints": 2.39333,
+    "objective": 0.64686
+  },
+  "final_rule": {
+    "success_gain": 0.20862,
+    "fail_penalty": 0.035,
+    "hint_discount": 0.6,
+    "transfer_bonus": 0.08,
+    "dependence_gain": 0.08
+  },
+  "final_meta_rule": {
+    "step_size": 0.04409,
+    "min_gain": 0.001,
+    "max_group_regression": 0.006,
+    "generation": 3
+  },
+  "evolution_log": [
+    {
+      "generation": 1,
+      "accepted": true,
+      "gain": 0.01114,
+      "worst_cohort_delta": 0.00686,
+      "meta_rule_before": {
+        "step_size": 0.035,
+        "min_gain": 0.001,
+        "max_group_regression": 0.006,
+        "generation": 0
+      },
+      "rule_after": {
+        "success_gain": 0.13,
+        "fail_penalty": 0.035,
+        "hint_discount": 0.6,
+        "transfer_bonus": 0.08,
+        "dependence_gain": 0.08
+      }
+    },
+    {
+      "generation": 2,
+      "accepted": true,
+      "gain": 0.00743,
+      "worst_cohort_delta": 0.00054,
+      "meta_rule_before": {
+        "step_size": 0.0378,
+        "min_gain": 0.001,
+        "max_group_regression": 0.006,
+        "generation": 1
+      },
+      "rule_after": {
+        "success_gain": 0.1678,
+        "fail_penalty": 0.035,
+        "hint_discount": 0.6,
+        "transfer_bonus": 0.08,
+        "dependence_gain": 0.08
+      }
+    },
+    {
+      "generation": 3,
+      "accepted": true,
+      "gain": 0.00719,
+      "worst_cohort_delta": 0,
+      "meta_rule_before": {
+        "step_size": 0.04082,
+        "min_gain": 0.001,
+        "max_group_regression": 0.006,
+        "generation": 2
+      },
+      "rule_after": {
+        "success_gain": 0.20862,
+        "fail_penalty": 0.035,
+        "hint_discount": 0.6,
+        "transfer_bonus": 0.08,
+        "dependence_gain": 0.08
+      }
+    }
+  ]
+}
